@@ -37,11 +37,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-openai-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-openai-v2-oldest -- -ra
 
   py310-test-instrumentation-openai-v2-latest_ubuntu-latest:
     name: instrumentation-openai-v2-latest 3.10 Ubuntu
@@ -56,11 +56,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-openai-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-openai-v2-latest -- -ra
 
   py311-test-instrumentation-openai-v2-oldest_ubuntu-latest:
     name: instrumentation-openai-v2-oldest 3.11 Ubuntu
@@ -75,11 +75,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-openai-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-openai-v2-oldest -- -ra
 
   py311-test-instrumentation-openai-v2-latest_ubuntu-latest:
     name: instrumentation-openai-v2-latest 3.11 Ubuntu
@@ -94,11 +94,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-openai-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-openai-v2-latest -- -ra
 
   py312-test-instrumentation-openai-v2-oldest_ubuntu-latest:
     name: instrumentation-openai-v2-oldest 3.12 Ubuntu
@@ -113,11 +113,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-openai-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-openai-v2-oldest -- -ra
 
   py312-test-instrumentation-openai-v2-latest_ubuntu-latest:
     name: instrumentation-openai-v2-latest 3.12 Ubuntu
@@ -132,11 +132,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-openai-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-openai-v2-latest -- -ra
 
   py313-test-instrumentation-openai-v2-oldest_ubuntu-latest:
     name: instrumentation-openai-v2-oldest 3.13 Ubuntu
@@ -151,11 +151,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-openai-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-openai-v2-oldest -- -ra
 
   py313-test-instrumentation-openai-v2-latest_ubuntu-latest:
     name: instrumentation-openai-v2-latest 3.13 Ubuntu
@@ -170,11 +170,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-openai-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-openai-v2-latest -- -ra
 
   py314-test-instrumentation-openai-v2-oldest_ubuntu-latest:
     name: instrumentation-openai-v2-oldest 3.14 Ubuntu
@@ -189,11 +189,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-openai-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-openai-v2-oldest -- -ra
 
   py314-test-instrumentation-openai-v2-latest_ubuntu-latest:
     name: instrumentation-openai-v2-latest 3.14 Ubuntu
@@ -208,11 +208,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-openai-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-openai-v2-latest -- -ra
 
   pypy3-test-instrumentation-openai-v2-oldest_ubuntu-latest:
     name: instrumentation-openai-v2-oldest pypy-3.10 Ubuntu
@@ -227,11 +227,11 @@ jobs:
         with:
           python-version: "pypy-3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e pypy3-test-instrumentation-openai-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e pypy3-test-instrumentation-openai-v2-oldest -- -ra
 
   pypy3-test-instrumentation-openai-v2-latest_ubuntu-latest:
     name: instrumentation-openai-v2-latest pypy-3.10 Ubuntu
@@ -246,11 +246,11 @@ jobs:
         with:
           python-version: "pypy-3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e pypy3-test-instrumentation-openai-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e pypy3-test-instrumentation-openai-v2-latest -- -ra
 
   py312-test-instrumentation-openai-v2-conformance_ubuntu-latest:
     name: instrumentation-openai-v2-conformance 3.12 Ubuntu
@@ -265,8 +265,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Read pinned weaver version
         id: versions
@@ -285,7 +285,7 @@ jobs:
           weaver --version
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-openai-v2-conformance -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-openai-v2-conformance -- -ra
 
   py313-test-instrumentation-openai-v2-conformance_ubuntu-latest:
     name: instrumentation-openai-v2-conformance 3.13 Ubuntu
@@ -300,8 +300,8 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Read pinned weaver version
         id: versions
@@ -320,7 +320,7 @@ jobs:
           weaver --version
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-openai-v2-conformance -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-openai-v2-conformance -- -ra
 
   py310-test-instrumentation-openai_agents-v2-oldest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-oldest 3.10 Ubuntu
@@ -335,11 +335,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-openai_agents-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-openai_agents-v2-oldest -- -ra
 
   py310-test-instrumentation-openai_agents-v2-latest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-latest 3.10 Ubuntu
@@ -354,11 +354,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-openai_agents-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-openai_agents-v2-latest -- -ra
 
   py311-test-instrumentation-openai_agents-v2-oldest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-oldest 3.11 Ubuntu
@@ -373,11 +373,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-openai_agents-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-openai_agents-v2-oldest -- -ra
 
   py311-test-instrumentation-openai_agents-v2-latest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-latest 3.11 Ubuntu
@@ -392,11 +392,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-openai_agents-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-openai_agents-v2-latest -- -ra
 
   py312-test-instrumentation-openai_agents-v2-oldest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-oldest 3.12 Ubuntu
@@ -411,11 +411,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-openai_agents-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-openai_agents-v2-oldest -- -ra
 
   py312-test-instrumentation-openai_agents-v2-latest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-latest 3.12 Ubuntu
@@ -430,11 +430,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-openai_agents-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-openai_agents-v2-latest -- -ra
 
   py313-test-instrumentation-openai_agents-v2-oldest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-oldest 3.13 Ubuntu
@@ -449,11 +449,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-openai_agents-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-openai_agents-v2-oldest -- -ra
 
   py313-test-instrumentation-openai_agents-v2-latest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-latest 3.13 Ubuntu
@@ -468,11 +468,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-openai_agents-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-openai_agents-v2-latest -- -ra
 
   py314-test-instrumentation-openai_agents-v2-oldest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-oldest 3.14 Ubuntu
@@ -487,11 +487,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-openai_agents-v2-oldest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-openai_agents-v2-oldest -- -ra
 
   py314-test-instrumentation-openai_agents-v2-latest_ubuntu-latest:
     name: instrumentation-openai_agents-v2-latest 3.14 Ubuntu
@@ -506,11 +506,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-openai_agents-v2-latest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-openai_agents-v2-latest -- -ra
 
   py310-test-instrumentation-google-genai-oldest_ubuntu-latest:
     name: instrumentation-google-genai-oldest 3.10 Ubuntu
@@ -525,11 +525,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-google-genai-oldest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-google-genai-oldest -- -ra
 
   py310-test-instrumentation-google-genai-latest_ubuntu-latest:
     name: instrumentation-google-genai-latest 3.10 Ubuntu
@@ -544,11 +544,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-google-genai-latest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-google-genai-latest -- -ra
 
   py311-test-instrumentation-google-genai-oldest_ubuntu-latest:
     name: instrumentation-google-genai-oldest 3.11 Ubuntu
@@ -563,11 +563,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-google-genai-oldest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-google-genai-oldest -- -ra
 
   py311-test-instrumentation-google-genai-latest_ubuntu-latest:
     name: instrumentation-google-genai-latest 3.11 Ubuntu
@@ -582,11 +582,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-google-genai-latest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-google-genai-latest -- -ra
 
   py312-test-instrumentation-google-genai-oldest_ubuntu-latest:
     name: instrumentation-google-genai-oldest 3.12 Ubuntu
@@ -601,11 +601,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-google-genai-oldest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-google-genai-oldest -- -ra
 
   py312-test-instrumentation-google-genai-latest_ubuntu-latest:
     name: instrumentation-google-genai-latest 3.12 Ubuntu
@@ -620,11 +620,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-google-genai-latest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-google-genai-latest -- -ra
 
   py313-test-instrumentation-google-genai-oldest_ubuntu-latest:
     name: instrumentation-google-genai-oldest 3.13 Ubuntu
@@ -639,11 +639,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-google-genai-oldest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-google-genai-oldest -- -ra
 
   py313-test-instrumentation-google-genai-latest_ubuntu-latest:
     name: instrumentation-google-genai-latest 3.13 Ubuntu
@@ -658,11 +658,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-google-genai-latest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-google-genai-latest -- -ra
 
   py314-test-instrumentation-google-genai-oldest_ubuntu-latest:
     name: instrumentation-google-genai-oldest 3.14 Ubuntu
@@ -677,11 +677,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-google-genai-oldest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-google-genai-oldest -- -ra
 
   py314-test-instrumentation-google-genai-latest_ubuntu-latest:
     name: instrumentation-google-genai-latest 3.14 Ubuntu
@@ -696,11 +696,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-google-genai-latest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-google-genai-latest -- -ra
 
   py310-test-instrumentation-anthropic-oldest_ubuntu-latest:
     name: instrumentation-anthropic-oldest 3.10 Ubuntu
@@ -715,11 +715,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-anthropic-oldest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-anthropic-oldest -- -ra
 
   py310-test-instrumentation-anthropic-latest_ubuntu-latest:
     name: instrumentation-anthropic-latest 3.10 Ubuntu
@@ -734,11 +734,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-anthropic-latest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-anthropic-latest -- -ra
 
   py311-test-instrumentation-anthropic-oldest_ubuntu-latest:
     name: instrumentation-anthropic-oldest 3.11 Ubuntu
@@ -753,11 +753,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-anthropic-oldest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-anthropic-oldest -- -ra
 
   py311-test-instrumentation-anthropic-latest_ubuntu-latest:
     name: instrumentation-anthropic-latest 3.11 Ubuntu
@@ -772,11 +772,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-anthropic-latest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-anthropic-latest -- -ra
 
   py312-test-instrumentation-anthropic-oldest_ubuntu-latest:
     name: instrumentation-anthropic-oldest 3.12 Ubuntu
@@ -791,11 +791,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-anthropic-oldest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-anthropic-oldest -- -ra
 
   py312-test-instrumentation-anthropic-latest_ubuntu-latest:
     name: instrumentation-anthropic-latest 3.12 Ubuntu
@@ -810,11 +810,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-anthropic-latest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-anthropic-latest -- -ra
 
   py313-test-instrumentation-anthropic-oldest_ubuntu-latest:
     name: instrumentation-anthropic-oldest 3.13 Ubuntu
@@ -829,11 +829,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-anthropic-oldest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-anthropic-oldest -- -ra
 
   py313-test-instrumentation-anthropic-latest_ubuntu-latest:
     name: instrumentation-anthropic-latest 3.13 Ubuntu
@@ -848,11 +848,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-anthropic-latest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-anthropic-latest -- -ra
 
   py314-test-instrumentation-anthropic-oldest_ubuntu-latest:
     name: instrumentation-anthropic-oldest 3.14 Ubuntu
@@ -867,11 +867,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-anthropic-oldest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-anthropic-oldest -- -ra
 
   py314-test-instrumentation-anthropic-latest_ubuntu-latest:
     name: instrumentation-anthropic-latest 3.14 Ubuntu
@@ -886,11 +886,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-instrumentation-anthropic-latest -- -ra
+        run: uvx --with tox-uv tox -e py314-test-instrumentation-anthropic-latest -- -ra
 
   py312-test-instrumentation-anthropic-conformance_ubuntu-latest:
     name: instrumentation-anthropic-conformance 3.12 Ubuntu
@@ -905,8 +905,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Read pinned weaver version
         id: versions
@@ -925,7 +925,7 @@ jobs:
           weaver --version
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-anthropic-conformance -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-anthropic-conformance -- -ra
 
   py313-test-instrumentation-anthropic-conformance_ubuntu-latest:
     name: instrumentation-anthropic-conformance 3.13 Ubuntu
@@ -940,8 +940,8 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Read pinned weaver version
         id: versions
@@ -960,7 +960,7 @@ jobs:
           weaver --version
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-anthropic-conformance -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-anthropic-conformance -- -ra
 
   py310-test-instrumentation-claude-agent-sdk-oldest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-oldest 3.10 Ubuntu
@@ -975,11 +975,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-claude-agent-sdk-oldest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-claude-agent-sdk-oldest -- -ra
 
   py310-test-instrumentation-claude-agent-sdk-latest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-latest 3.10 Ubuntu
@@ -994,11 +994,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-instrumentation-claude-agent-sdk-latest -- -ra
+        run: uvx --with tox-uv tox -e py310-test-instrumentation-claude-agent-sdk-latest -- -ra
 
   py311-test-instrumentation-claude-agent-sdk-oldest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-oldest 3.11 Ubuntu
@@ -1013,11 +1013,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-claude-agent-sdk-oldest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-claude-agent-sdk-oldest -- -ra
 
   py311-test-instrumentation-claude-agent-sdk-latest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-latest 3.11 Ubuntu
@@ -1032,11 +1032,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-instrumentation-claude-agent-sdk-latest -- -ra
+        run: uvx --with tox-uv tox -e py311-test-instrumentation-claude-agent-sdk-latest -- -ra
 
   py312-test-instrumentation-claude-agent-sdk-oldest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-oldest 3.12 Ubuntu
@@ -1051,11 +1051,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-claude-agent-sdk-oldest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-claude-agent-sdk-oldest -- -ra
 
   py312-test-instrumentation-claude-agent-sdk-latest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-latest 3.12 Ubuntu
@@ -1070,11 +1070,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-claude-agent-sdk-latest -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-claude-agent-sdk-latest -- -ra
 
   py313-test-instrumentation-claude-agent-sdk-oldest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-oldest 3.13 Ubuntu
@@ -1089,11 +1089,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-claude-agent-sdk-oldest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-claude-agent-sdk-oldest -- -ra
 
   py313-test-instrumentation-claude-agent-sdk-latest_ubuntu-latest:
     name: instrumentation-claude-agent-sdk-latest 3.13 Ubuntu
@@ -1108,11 +1108,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-claude-agent-sdk-latest -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-claude-agent-sdk-latest -- -ra
 
   py312-test-instrumentation-langchain-conformance_ubuntu-latest:
     name: instrumentation-langchain-conformance 3.12 Ubuntu
@@ -1127,8 +1127,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Read pinned weaver version
         id: versions
@@ -1147,7 +1147,7 @@ jobs:
           weaver --version
 
       - name: Run tests
-        run: tox -e py312-test-instrumentation-langchain-conformance -- -ra
+        run: uvx --with tox-uv tox -e py312-test-instrumentation-langchain-conformance -- -ra
 
   py313-test-instrumentation-langchain-conformance_ubuntu-latest:
     name: instrumentation-langchain-conformance 3.13 Ubuntu
@@ -1162,8 +1162,8 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Read pinned weaver version
         id: versions
@@ -1182,7 +1182,7 @@ jobs:
           weaver --version
 
       - name: Run tests
-        run: tox -e py313-test-instrumentation-langchain-conformance -- -ra
+        run: uvx --with tox-uv tox -e py313-test-instrumentation-langchain-conformance -- -ra
 
   py310-test-util-genai_ubuntu-latest:
     name: util-genai 3.10 Ubuntu
@@ -1197,11 +1197,11 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py310-test-util-genai -- -ra
+        run: uvx --with tox-uv tox -e py310-test-util-genai -- -ra
 
   py311-test-util-genai_ubuntu-latest:
     name: util-genai 3.11 Ubuntu
@@ -1216,11 +1216,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py311-test-util-genai -- -ra
+        run: uvx --with tox-uv tox -e py311-test-util-genai -- -ra
 
   py312-test-util-genai_ubuntu-latest:
     name: util-genai 3.12 Ubuntu
@@ -1235,11 +1235,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py312-test-util-genai -- -ra
+        run: uvx --with tox-uv tox -e py312-test-util-genai -- -ra
 
   py313-test-util-genai_ubuntu-latest:
     name: util-genai 3.13 Ubuntu
@@ -1254,11 +1254,11 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py313-test-util-genai -- -ra
+        run: uvx --with tox-uv tox -e py313-test-util-genai -- -ra
 
   py314-test-util-genai_ubuntu-latest:
     name: util-genai 3.14 Ubuntu
@@ -1273,11 +1273,11 @@ jobs:
         with:
           python-version: "3.14"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e py314-test-util-genai -- -ra
+        run: uvx --with tox-uv tox -e py314-test-util-genai -- -ra
 
   pypy3-test-util-genai_ubuntu-latest:
     name: util-genai pypy-3.10 Ubuntu
@@ -1292,8 +1292,8 @@ jobs:
         with:
           python-version: "pypy-3.10"
 
-      - name: Install tox
-        run: pip install tox-uv
+      - name: Set up uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
 
       - name: Run tests
-        run: tox -e pypy3-test-util-genai -- -ra
+        run: uvx --with tox-uv tox -e pypy3-test-util-genai -- -ra
